@@ -1,4 +1,6 @@
+import Nav from '@/components/Nav'
 import './globals.css'
+import Link from 'next/link'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,7 +19,15 @@ export default function RootLayout({
     <>
       <html lang="en">
         <body className={inter.className}>
+          <div className='h-screen relative'>
+          <Nav />
           {children}
+          <div className='absolute bottom-5 left-0 right-0 flex justify-center'>
+            <Link href='mailto:bilgi@aciksecim.org'>
+              <span className='text-[#7C7C7C]'>bilgi@aciksecim.org</span>
+            </Link>
+          </div>
+          </div>
         </body>
       </html>
     </>
