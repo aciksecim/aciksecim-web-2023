@@ -1,7 +1,11 @@
 'use client';
 import React, { useState, ChangeEvent } from 'react';
 
-function ElectionOutcome({ onCityChange }) {
+interface ElectionOutcomeProps {
+  onCityChange: (city: string) => void;
+}
+
+function ElectionOutcome({ onCityChange }: ElectionOutcomeProps) {
   const [selectedCity, setSelectedCity] = useState("Türkiye Geneli");
   
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
