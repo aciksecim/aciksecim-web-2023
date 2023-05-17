@@ -13,7 +13,7 @@ import { useState } from "react";
 export default function Home() {
   const [selectedCity, setSelectedCity] = useState("Türkiye Geneli");
 
-  const handleCityChange = (city) => {
+  const handleCityChange = (city: string) => {
     setSelectedCity(city);
   };
   return (
