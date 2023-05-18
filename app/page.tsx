@@ -9,7 +9,6 @@ import Kk from "../public/kk.png";
 import { useState } from "react";
 
 
-
 export default function Home() {
   const [selectedCity, setSelectedCity] = useState("Türkiye Geneli");
 
@@ -42,6 +41,12 @@ export default function Home() {
             <span className="text-[#7C7C7C]">bilgi@aciksecim.org</span>
           </Link>
         </div>
+      </div>
+      <ElectionOutcome />
+      <div className='flex justify-center mt-10'>
+        <Link href="/login">
+          <span className='hover:underline'>Üye Ol</span>
+        </Link>
       </div>
     </>
   );

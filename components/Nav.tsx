@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -5,6 +6,7 @@ import React from "react";
 import Logo from "../public/logo.png";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+
 
 const Nav = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -15,6 +17,7 @@ const Nav = () => {
 
   return (
     <>
+
       <header className="w-full h-16 bg-white drop-shadow-lg">
         <div className="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
           <Link href={"/"}>
@@ -62,6 +65,7 @@ const Nav = () => {
           </div>
         </div>
       </header>
+
     </>
   );
 };
