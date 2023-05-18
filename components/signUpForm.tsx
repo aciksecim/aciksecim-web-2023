@@ -21,8 +21,8 @@ const Form = () => {
 
     return (
         <>
-            <div className='flex justify-center '>
-                <form className='flex flex-col gap-3 items-end' onSubmit={handleSubmit}>
+            <div className="flex justify-center mt-6">
+                <form className="flex flex-col gap-3 items-end text-sm" onSubmit={handleSubmit}>
                     <label>
                         Ad:
                         <input
@@ -59,14 +59,14 @@ const Form = () => {
                             placeholder='Telefon Numarınızı Giriniz.'
                         />
                     </label>
-                    <label className='relative'>
+                    <label className=''>
                         Şifre:
                         <input
                             className="border border-black rounded-xl ml-5 placeholder:pl-3"
                             type={passwordVisible ? 'text' : 'password'}
                             name="password"
                         />
-                        <button className='absolute top-1 right-3' onClick={togglePasswordVisibility}>
+                        <button className=' top-1 right-3' onClick={togglePasswordVisibility}>
                             {passwordVisible
                                 ?
                                 <AiFillEye />
@@ -75,14 +75,14 @@ const Form = () => {
                             }
                         </button>
                     </label>
-                    <label className='relative'>
+                    <label className=''>
                         Şifre(tekrar):
                         <input
                             className="border border-black rounded-xl ml-5 placeholder:pl-3"
                             type={confirmPasswordVisible ? 'text' : 'password'}
                             name="confirmPassword"
                         />
-                        <button className='absolute top-1 right-3' onClick={toggleConfirmPasswordVisible}>
+                        <button className='top-1 right-3' onClick={toggleConfirmPasswordVisible}>
                             {confirmPasswordVisible
                                 ?
                                 <AiFillEye />

@@ -17,16 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang="en">
+      <html lang="tr">
         <body className={inter.className}>
-          <div className='h-screen relative'>
           <Nav />
           {children}
-          <div className='absolute bottom-5 left-0 right-0 flex justify-center'>
+          <div className="absolute bottom-5 left-0 right-0 flex justify-center z-20">
             <Link href='mailto:bilgi@aciksecim.org'>
               <span className='text-[#7C7C7C]'>bilgi@aciksecim.org</span>
             </Link>
-          </div>
           </div>
         </body>
       </html>
