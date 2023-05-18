@@ -1,7 +1,5 @@
 "use client";
-import Head from "next/head";
 import CandidateProfiles from "@/components/CandidateProfiles";
-import Navbar from "@/components/Nav";
 import ElectionOutcome from "@/components/ElectionOutcome";
 import Link from "next/link";
 import Rte from "../public/erdogan.png";
@@ -17,8 +15,6 @@ export default function Home() {
   };
   return (
     <>
-      <div className="relative h-screen">
-        <Navbar />
         <div className="flex flex-col w-full flex-nowrap bg-[#F0F0F0] py-5">
           <div className="flex flex-nowrap justify-center w-full">
             <div className="flex gap-">
@@ -35,19 +31,6 @@ export default function Home() {
         </div>
 
         <ElectionOutcome onCityChange={handleCityChange} />
-
-        <div className="flex justify-center">
-          <Link href="mailto:bilgi@aciksecim.org">
-            <span className="text-[#7C7C7C]">bilgi@aciksecim.org</span>
-          </Link>
-        </div>
-      </div>
-      <ElectionOutcome />
-      <div className='flex justify-center mt-10'>
-        <Link href="/login">
-          <span className='hover:underline'>Üye Ol</span>
-        </Link>
-      </div>
     </>
   );
 }

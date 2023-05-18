@@ -1,10 +1,10 @@
-import Form from '@/components/Form'
+import SignUpForm from '@/components/signUpForm'
 import React from 'react'
 
 function page() {
   return (
     <>
-      <Form />
+      <SignUpForm />
     </>
   )
 }
