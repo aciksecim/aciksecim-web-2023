@@ -15,7 +15,7 @@ export default function Home() {
   };
   return (
     <>
-        <div className="flex flex-col w-full flex-nowrap bg-[#F0F0F0] py-5">
+        {/* <div className="flex flex-col w-full flex-nowrap bg-[#F0F0F0] py-5">
           <div className="flex flex-nowrap justify-center w-full">
             <div className="flex gap-">
                 <CandidateProfiles
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex w-full justify-center mt-4">{selectedCity}</div>
         </div>
 
-        <ElectionOutcome onCityChange={handleCityChange} />
+        <ElectionOutcome onCityChange={handleCityChange} /> */}
     </>
   );
 }
