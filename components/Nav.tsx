@@ -30,7 +30,7 @@ const Nav = () => {
           <ul
             id="menu"
             className={`fixed top-0 h-screen right-0 px-10 text-gray-500 py-16 text-right bg-white z-50
-            md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 ${
+             md:flex md:p-5 md:bg-transparent md:flex-row md:space-x-6 ${
               toggleMenu ? "w-full h-screen" : "hidden"
             } `}
           >
